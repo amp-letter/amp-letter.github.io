@@ -65,7 +65,7 @@ html *[lang] { display: none; }
 html[lang=en] *[lang=en],
 html[lang=es] *[lang=es],
 html[lang=fr] *[lang=fr],
-html[lang=jp] *[lang=jp] {
+html[lang=ja] *[lang=ja] {
 	display: block
 }
 
@@ -112,7 +112,7 @@ html[lang=jp] *[lang=jp] {
 html[lang=en] .lang-switcher li [data-langswitch='en'],
 html[lang=es] .lang-switcher li [data-langswitch='es'],
 html[lang=fr] .lang-switcher li [data-langswitch='fr'],
-html[lang=jp] .lang-switcher li [data-langswitch='jp'] {
+html[lang=ja] .lang-switcher li [data-langswitch='ja'] {
 	color: inherit;
 	text-decoration: inherit;
 	pointer-events: none;
