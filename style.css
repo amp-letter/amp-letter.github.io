@@ -80,14 +80,12 @@ html[lang=ja] *[lang=ja] {
 	padding: 0;
 }
 
+.smaller-text {
+	font-size: 80%;
+}
+
 .signatories li {
-	display: none;
-}
-.signatories li.highlight, .signatories.show-all li, .signatories li.expander {
 	display: inline;
-}
-.signatories.show-all .expander {
-	display: none;
 }
 .signatories li::after {
 	content: ', ';
