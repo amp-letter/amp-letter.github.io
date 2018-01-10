@@ -65,7 +65,8 @@ html *[lang] { display: none; }
 html[lang=en] *[lang=en],
 html[lang=es] *[lang=es],
 html[lang=fr] *[lang=fr],
-html[lang=ja] *[lang=ja] {
+html[lang=ja] *[lang=ja],
+html[lang=de] *[lang=de] {
 	display: block
 }
 
@@ -116,7 +117,8 @@ html[lang=ja] *[lang=ja] {
 html[lang=en] .lang-switcher li [data-langswitch='en'],
 html[lang=es] .lang-switcher li [data-langswitch='es'],
 html[lang=fr] .lang-switcher li [data-langswitch='fr'],
-html[lang=ja] .lang-switcher li [data-langswitch='ja'] {
+html[lang=ja] .lang-switcher li [data-langswitch='ja'],
+html[lang=de] .lang-switcher li [data-langswitch='de'] {
 	color: inherit;
 	text-decoration: inherit;
 	pointer-events: none;
