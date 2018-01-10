@@ -81,7 +81,13 @@ html[lang=ja] *[lang=ja] {
 }
 
 .signatories li {
+	display: none;
+}
+.signatories li.highlight, .signatories.show-all li, .signatories li.expander {
 	display: inline;
+}
+.signatories.show-all .expander {
+	display: none;
 }
 .signatories li::after {
 	content: ', ';
