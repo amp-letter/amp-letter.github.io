@@ -66,7 +66,7 @@ html[lang=en] *[lang=en],
 html[lang=es] *[lang=es],
 html[lang=fr] *[lang=fr],
 html[lang=ja] *[lang=ja],
-html[lang=pt] *[lang=pt] {
+html[lang=pt-br] *[lang=pt-br] {
 	display: block
 }
 
@@ -114,7 +114,7 @@ html[lang=en] .lang-switcher li [data-langswitch='en'],
 html[lang=es] .lang-switcher li [data-langswitch='es'],
 html[lang=fr] .lang-switcher li [data-langswitch='fr'],
 html[lang=ja] .lang-switcher li [data-langswitch='ja'],
-html[lang=pt] .lang-switcher li [data-langswitch='pt'] {
+html[lang=pt-br] .lang-switcher li [data-langswitch='pt-br'] {
 	color: inherit;
 	text-decoration: inherit;
 	pointer-events: none;
