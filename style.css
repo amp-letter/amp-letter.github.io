@@ -81,6 +81,10 @@ html[lang=ja] *[lang=ja] {
 	padding: 0;
 }
 
+.smaller-text {
+	font-size: 80%;
+}
+
 .signatories li {
 	display: inline;
 }
