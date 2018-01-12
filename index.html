@@ -72,7 +72,7 @@ description: AMP letter
 				{% endcapture %}
 				{% assign sigsSorted = sigs | split: "|||" | uniq | sort %}
 
-				<h2>Original signatories ({{ sigsSorted | size }})</h2>
+				<h2>Original signatories ({{ sigsSorted | size | minus: 1 }})</h2>
 				<ul class='signatories'>
 					{{ sigsSorted }}
 				</ul>
@@ -84,7 +84,7 @@ description: AMP letter
 				{% endcapture %}
 				{% assign sigsSorted = sigs | split: "|||" | uniq | sort %}
 
-				<h2>Supporting signatories ({{ sigsSorted | size }})</h2>
+				<h2>Supporting signatories ({{ sigsSorted | size | minus: 1 }})</h2>
 				<ul class='signatories smaller-text'>
 					{{ sigsSorted }}
 				</ul>
@@ -96,7 +96,7 @@ description: AMP letter
 				{% endcapture %}
 				{% assign sigsSorted = sigs | split: "|||" | uniq | sort %}
 
-				<h2>On behalf of organisations ({{ sigsSorted | size }})</h2>
+				<h2>On behalf of organisations ({{ sigsSorted | size | minus: 1 }})</h2>
 				<ul class='signatories'>
 					{{ sigsSorted }}
 				</ul>
