@@ -1,7 +1,7 @@
-If you are signing, please create a file called your-name.yml in /_data/supporting, with the following keys:
+If you are signing, please put your FULL NAME in the TITLE OF THE PULL REQUEST.
 
-* `sortName`: Your family name (just for sorting, not displayed)
-* `displayName`: How your full name should be displayed
+You should have a file called your-name.yml in /_data/supporting, with the following keys:
+
+* `sortName`: Your family name (just for sorting, not displayed, not case sensitive)
+* `displayName`: How your full name should be displayed.  Please capitalise if appropriate to your language.
 * `url`: URL of your website, profile or AMP-related statement
-
-You'll be inserted into the list in order of `sortName`.
