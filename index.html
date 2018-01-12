@@ -67,7 +67,7 @@ description: AMP letter
 
 				{% capture sigs %}
 					{% for person in site.data.original %}
-						|||<!--{{person[1].sortName}}--><li><a href='{{ person[1].url }}'>{{ person[1].displayName }}</a></li>
+						|||<!--{{ person[1].sortName | downcase }}--><li><a href='{{ person[1].url }}'>{{ person[1].displayName }}</a></li>
 					{% endfor %}
 				{% endcapture %}
 				{% assign sigsSorted = sigs | split: "|||" | uniq | sort %}
@@ -79,7 +79,7 @@ description: AMP letter
 
 				{% capture sigs %}
 					{% for person in site.data.supporting %}
-						|||<!--{{person[1].sortName}}--><li><a href='{{ person[1].url }}'>{{ person[1].displayName }}</a></li>
+						|||<!--{{ person[1].sortName | downcase }}--><li><a href='{{ person[1].url }}'>{{ person[1].displayName }}</a></li>
 					{% endfor %}
 				{% endcapture %}
 				{% assign sigsSorted = sigs | split: "|||" | uniq | sort %}
@@ -91,7 +91,7 @@ description: AMP letter
 
 				{% capture sigs %}
 					{% for org in site.data.orgs %}
-						|||<!--{{org[1].name}}--><li>{{ org[1].representativeName }} for <a href='{{ org[1].url }}'>{{ org[1].name }}</a></li>
+						|||<!--{{ org[1].name | downcase }}--><li>{{ org[1].representativeName }} for <a href='{{ org[1].url }}'>{{ org[1].name }}</a></li>
 					{% endfor %}
 				{% endcapture %}
 				{% assign sigsSorted = sigs | split: "|||" | uniq | sort %}
