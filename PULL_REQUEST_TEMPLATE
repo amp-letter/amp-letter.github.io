@@ -1,5 +1,7 @@
-If you are signing, please:
+If you are signing, please put your FULL NAME in the TITLE OF THE PULL REQUEST.
 
-* Include your full name in the TITLE of the PR
-* Place your name in the list ALPHABETICALLY by FAMILY name
-* Check your PR after you create it to ensure that you didn't accidentally delete other signatories while editing the file.  While you are editing, other PRs may be merged.
+You should have a file called your-name.yml in /_data/supporting, with the following keys:
+
+* `sortName`: Your family name (just for sorting, not displayed, not case sensitive)
+* `displayName`: How your full name should be displayed.  Please capitalise if appropriate to your language.
+* `url`: URL of your website, profile or AMP-related statement

@@ -1,3 +1,6 @@
+---
+description: AMP letter
+---
 <!doctype html>
 <html lang="en">
 
@@ -6,6 +9,7 @@
 			<meta http-equiv="x-ua-compatible" content="ie=edge">
 			<title>AMP letter</title>
 			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<meta name="robots" content="nofollow" />
 
 			<link rel="stylesheet" href="style.css">
 	</head>
@@ -19,9 +23,11 @@
 				</svg>
 				<h1 lang='en'>A letter about Google AMP</h1>
 				<h1 lang='fr'>Une lettre sur Google AMP</h1>
-				<h1 lang='ja'>Google AMPに関する手紙</h1>
+				<h1 lang='ja'>Google AMPに関する公開書簡</h1>
 				<h1 lang='es'>Una carta sobre Google AMP</h1>
 				<h1 lang='pt-br'>Uma carta sobre Google AMP</h1>
+				<h1 lang='de'>Ein Brief über Google AMP</h1>
+				<h1 lang='vi'>Một bức thư về Google AMP</h1>
 			</div>
 		</header>
 
@@ -54,117 +60,46 @@
 
 				<p>However, publishers should not be compelled by Google’s search dominance to put their content under a Google umbrella.  <strong>The Web is not Google, and should not be just Google.</strong></p>
 
+				<p style='text-align: right'><em>9 January 2018</em></p>
+
 				<hr />
 
 				<p>Sincerely,</p>
 
-				<h2>As individuals</h2>
+				{% capture sigs %}
+					{% for person in site.data.original %}
+						|||<!--{{ person[1].sortName | downcase }}--><li><a href='{{ person[1].url }}'>{{ person[1].displayName }}</a></li>
+					{% endfor %}
+				{% endcapture %}
+				{% assign sigsSorted = sigs | split: "|||" | uniq | sort %}
 
+				<h2>Original signatories ({{ sigsSorted | size | minus: 1 }})</h2>
 				<ul class='signatories'>
-					<li><a href='https://jamesabley.com'>James Abley</a></li>
-					<li><a href='http://boramalper.org'>Mert Bora Alper</a></li>
-					<li><a href='https://en.wikipedia.org/wiki/Amelia_Andersdotter'>Amelia Andersdotter</a></li>
-					<li><a href='https://twitter.com/torgo'>Daniel Appelquist</a></li>
-					<li><a href='https://waxy.org/'>Andy Baio</a></li>
-					<li><a href='https://rogier.design'>Rogier Barendregt</a></li>
-					<li><a href='http://alicebartlett.co.uk/'>Alice Bartlett</a></li>
-					<li><a href='https://twitter.com/CaptnBaz'>Nicolas Bazinet</a></li>
-					<li><a href='https://berjon.com/'>Robin Berjon</a></li>
-					<li><a href='https://trib.tv'>Andrew Betts</a></li>
-					<li><a href='http://mathias-biilmann.net'>Matt Biilmann</a></li>
-					<li><a href='https://ada.is/'>Ada Rose Cannon</a></li>
-					<li><a href="https://alexcarpenter.me">Alex Carpenter</a></li>
-					<li><a href="https://www.chenhuijing.com">Hui Jing Chen</a></li>
-					<li><a href='https://twitter.com/agcolom'>Anne-Gaelle Colom</a></li>
-					<li><a href='https://www.benc.io/'>Benjamin Cooper</a></li>
-					<li><a href='https://twitter.com/codycraven'>Cody Craven</a></li>
-					<li><a href='https://twitter.com/jordandanford'>Jordan Danford</a></li>
-					<li><a href='https://www.kaelig.fr/'>Kaelig Deloumeau-Prigent</a></li>
-					<li><a href='https://twitter.com/AurelioDeRosa'>Aurelio De Rosa</a></li>
-					<li><a href='https://www.confidant.ca/'>Allan Dowdeswell</a></li>
-					<li><a href='https://shkspr.mobi/blog'>Terence Eden</a></li>
-					<li><a href='https://blog.albertoelias.me'>Alberto Elias</a></li>
-					<li><a href='https://qubyte.codes/'>Mark S. Everitt</a></li>
-					<li><a href='https://www.jonathanfielding.com'>Jonathan Fielding</a></li>
-					<li><a href='https://www.twitter.com/smashingmag'>Vitaly Friedman</a></li>
-					<li><a href='http://droidpinkman.io'>Dennis Gaebel</a></li>
-					<li><a href='https://sixtwothree.org'>Jason Garber</a></li>
-					<li><a href='https://hugogiraudel.com'>Hugo Giraudel</a></li>
-					<li><a href='https://keithjgrant.com'>Keith J. Grant</a></li>
- 					<li><a href='https://twitter.com/ThomasG77'>Thomas Gratier</a></li>
-					<li><a href='https://hph.is'>Haukur Páll Hallvarðsson</a></li>
-					<li><a href='https://twitter.com/patrickhamann'>Patrick Hamann</a></li>
-					<li><a href='https://twitter.com/austinh7'>Austin Harris</a></li>
-					<li><a href='https://nilsnh.no'>Nils Norman Haukås</a></li>
-					<li><a href='https://pxlnv.com'>Nick Heer</a></li>
-					<li><a href='https://marcus.io'>Marcus Herrmann</a></li>
-					<li><a href='https://shanehudson.net'>Shane Hudson</a></li>
-					<li><a href='https://ghughes.com'>Greg Hughes</a></li>
-					<li><a href='https://blog.comandeer.pl'>Tomasz Jakut</a></li>
-					<li><a href='https://scottjehl.com/'>Scott Jehl</a></li>
-					<li><a href='https://r1b.solutions/'>Robert Jensen</a></li>
-					<li><a href='https://stevekarsch.com/'>Steve Karsch</a></li>
-					<li><a href='https://adactio.com'>Jeremy Keith</a></li>
-					<li><a href='http://cjkinni.com'>Christopher Kinniburgh</a></li>
-					<li><a href='https://keybase.io/ariel'>Ariel Kirkwood</a></li>
-					<li><a href='https://philip.news'>Philip Kobernik</a></li>
-					<li><a href='https://www.stavros.io'>Stavros Korokithakis</a></li>
-					<li><a href='https://jkphl.is'>Joschi Kuphal</a></li>
-					<li><a href='http://thejameskyle.com'>James Kyle</a></li>
-					<li><a href='https://twitter.com/livlab'>Livia Labate</a></li>
-					<li><a href='https://zachleat.com'>Zach Leatherman</a></li>
-					<li><a href='https://sebastianlimbach.com'>Sebastian Limbach</a></li>
-					<li><a href='https://banterability.com'>Jeff Long</a></li>
-					<li><a href='https://ethanmarcotte.com/'>Ethan Marcotte</a></li>
-					<li><a href='https://emansom.nl/'>Ewout van Mansom</a></li>
-					<li><a href='https://twitter.com/zmarkan'>Zan Markan</a></li>
-					<li><a href='https://rland.me.uk/'>David Marland</a></li>
-					<li><a href='https://twitter.com/wilto'>Mat Marquis</a></li>
-					<li><a href='http://www.integralist.co.uk/'>Mark McDonnell</a></li>
-					<li><a href='http://www.sammorr.is/'>Sam Morris</a></li>
-					<li><a href='https://www.linkedin.com/in/drwilco'>Rogier Mulhuijzen</a></li>
-					<li><a href='https://www.mnot.net/'>Mark Nottingham</a></li>
-					<li><a href='https://twitter.com/nicknisi'>Nick Nisi</a></li>
-					<li><a href='http://scottohara.me/'>Scott O'Hara</a></li>
-					<li><a href='https://twitter.com/okor'>Jason Ormand</a></li>
-					<li><a href='https://peteroshaughnessy.com'>Peter O'Shaughnessy</a></li>
-					<li><a href='https://matthiasott.com'>Matthias Ott</a></li>
-					<li><a href='http://patik.com'>Craig Patik</a></li>
-					<li><a href='https://jellepelgrims.com'>Jelle Pelgrims</a></li>
-					<li><a href='https://twitter.com/lspollack'>Lisa Pollack</a></li>
-					<li><a href='http://ianpouncey.com/'>Ian Pouncey</a></li>
-					<li><a href='https://www.arden.nl'>Arden de Raaij</a></li>
-					<li><a href='http://markreeves.net'>Mark Reeves</a></li>
-					<li><a href='https://twitter.com/aendrew'>Ændrew Rininsland</a></li>
-					<li><a href='http://johanronsse.be'>Johan Ronsse</a></li>
-					<li><a href='https://twitter.com/thisnatasha'>Natasha Rooney</a></li>
-					<li><a href='http://adrianroselli.com/'>Adrian Roselli</a></li>
-					<li><a href='https://springworks.co.uk'>Steve Rowling</a></li>
-					<li><a href='https://twitter.com/cssradar'>Yuya Saito</a></li>
-					<li><a href='https://twitter.com/asanders'>Alex Sanders</a></li>
-					<li><a href='https://jed.is/'>Jed Schmidt</a></li>
-					<li><a href='https://twitter.com/herrbertling'>Markus Siering</a></li>
-					<li><a href='https://www.andismith.com'>Andi Smith</a></li>
-					<li><a href='https://stevesouders.com/'>Steve Souders</a></li>
-					<li><a href='http://serdar.work/'>Serdar Soy</a></li>
-					<li><a href='https://brian.teeman.net/'>Brian Teeman</a></li>
-					<li><a href='https://theilemail.de/'>Tom Theile</a></li>
-					<li><a href='https://moox.io/'>Maxime Thirouin</a></li>
-					<li><a href='https://www.twnsnd.com/'>Ryan Townsend</a></li>
-					<li><a href='https://twitter.com/jevirgen'>Jaime Virgen</a></li>
-					<li><a href='https://hiddedevries.nl/en'>Hidde de Vries</a></li>
-					<li><a href='https://jeremywagner.me/'>Jeremy Wagner</a></li>
-					<li><a href='https://tink.uk/'>Léonie Watson</a></li>
-					<li><a href='http://www.standardista.com/'>Estelle Weyl</a></li>
-					<li><a href='https://twitter.com/danilowoz'>Danilo Woznica</a></li>
-					<li><a href='https://twitter.com/shadowmaru'>Ricardo Yasuda</a></li>
-					<li><a href='https://zdfs.com'>Zachary Forrest y Salazar</a></li>
+					{{ sigsSorted }}
 				</ul>
 
-				<h2>On behalf of organisations</h2>
+				{% capture sigs %}
+					{% for person in site.data.supporting %}
+						|||<!--{{ person[1].sortName | downcase }}--><li><a href='{{ person[1].url }}'>{{ person[1].displayName }}</a></li>
+					{% endfor %}
+				{% endcapture %}
+				{% assign sigsSorted = sigs | split: "|||" | uniq | sort %}
 
+				<h2>Supporting signatories ({{ sigsSorted | size | minus: 1 }})</h2>
+				<ul class='signatories smaller-text'>
+					{{ sigsSorted }}
+				</ul>
+
+				{% capture sigs %}
+					{% for org in site.data.orgs %}
+						|||<!--{{ org[1].name | downcase }}--><li>{{ org[1].representativeName }} for <a href='{{ org[1].url }}'>{{ org[1].name }}</a></li>
+					{% endfor %}
+				{% endcapture %}
+				{% assign sigsSorted = sigs | split: "|||" | uniq | sort %}
+
+				<h2>On behalf of organisations ({{ sigsSorted | size | minus: 1 }})</h2>
 				<ul class='signatories'>
-					<li>Niels ten Oever for <a href='https://www.article19.org/'>ARTICLE19</a></li>
+					{{ sigsSorted }}
 				</ul>
 
 				<p class='note'>Signatories are listed in alphabetical order of family name.  If you would like to sign this letter please make a <a href='https://github.com/amp-letter/amp-letter'>pull request</a>.</p>
@@ -172,26 +107,26 @@
 
 			<article class='container' lang='fr'>
 
-				<p>Nous sommes une communauté d’individus ayant un intérêt particulier pour le développement et la bonne santé du World Wide Web (“le Web”), et sommes fortement préoccupés par les “Accelerated Mobile Pages” (AMP), un projet de Google qui prétend améliorer l’expérience utilisateur sur le web.</p>
+				<p>Nous sommes une communauté d’individus ayant un intérêt particulier pour le développement et la bonne santé du World Wide Web (“le Web”), et sommes fortement préoccupés par les “Accelerated Mobile Pages” (AMP), un projet de Google qui prétend vouloir améliorer l’expérience utilisateur sur le web.</p>
 
 				<p>En réalité, AMP enferme les utilisateurs et utilisatrices dans l’espace de Google en reroutant le trafic des autres sites au profit de Google. À l’échelle de milliards d’utilisateurs et d’utilisatrices, cela renforce la position déjà largement dominante de Google sur le web.</p>
 
-				<p>Nous reconnaissons le problème de la lenteur de chargement des pages sur le web, par rapport à d’autres technologies propriétaires alternatives telles que Facebook Instant Articles et Apple News. Dans le but de maximiser leurs recettes, les éditeurs de contenu (particulièrement la presse) ont depuis toujours dû faire face à de mauvais choix et des incitations fallacieuses qui ont mené à des décisions qui leur sont nuisibles ainsi qu’aux utilisateurs et utilisatrices qui souffrent d’une mauvaise expérience d’utilisation.</p>
+				<p>Nous reconnaissons le problème de la lenteur de chargement des pages sur le web, par rapport à d’autres technologies propriétaires telles que Facebook Instant Articles et Apple News. Dans le but de maximiser leurs recettes, les éditeurs de contenu (particulièrement la presse) ont depuis toujours dû faire face à de mauvais choix et des incitations fallacieuses qui ont mené à des décisions qui leur sont nuisibles ainsi qu’aux utilisateurs et utilisatrices qui souffrent d’une mauvaise expérience d’utilisation.</p>
 
 				<p>Les moteurs de recherche se trouvent dans une position privilégiée pour exercer leur influence dans la résolution de ce problème. En revanche, Google en a profité pour créer un placement préférentiel en haut des pages de résultats pour les articles et une icône “éclair” pour tous types de contenus, uniquement accessibles aux éditeurs qui utilisent une technologie contrôlée par Google, servie par Google via leur infrastructure, sur une adresse web (URL) Google, et insérée dans une expérience utilisateur contrôlée par Google.</p>
 
-				<p>Le format AMP n’est pas un souci en soi, mais deux aspects de sa mise en œuvre renforcent la position de Google en tant que standard de facto pour la création et l’hébergement de contenu, à mesure que Google promeut AMP auprès de ceux qui en produisent:</p>
+				<p>Le format AMP n’est pas un problème en soi, mais deux aspects de sa mise en œuvre renforcent la position de Google en tant que standard de facto pour la création et l’hébergement de contenu, à mesure que Google promeut AMP auprès de ceux qui en produisent:</p>
 
 				<ol>
 					<li>Tout contenu qui choisit de supporter AMP ainsi que l’hébergement affilié sous le domaine Google acquiert une promotion privilégiée dans les résultats de recherche, y compris (pour les articles) un placement au dessus des autres résultats.</li>
-					<li>Les utilisateurs et utilisatrices navigant depuis Google vers un contenu recommandé par Google restent, sans le savoir, dans l’enceinte de l’écosystème Google.</li>
+					<li>Les utilisateurs et utilisatrices naviguant depuis Google vers un contenu recommandé par Google restent, sans le savoir, dans l’enceinte de l’écosystème Google.</li>
 				</ol>
 
-				<p>Si l’objectif de Google avec AMP est en réalité d’améliorer l’expérience utilisateur sur le web, alors nous suggérons de simples changements qui serviraient cette cause tout en permettant au web de rester dynamique, compétitif et tourné vers les consommateurs:</p>
+				<p>Si l’objectif de Google avec AMP est réellement d’améliorer l’expérience utilisateur sur le web, alors nous suggérons de simples changements qui serviraient cette cause tout en permettant au web de rester dynamique, compétitif et tourné vers les consommateurs:</p>
 
 				<ol>
 					<li>Au lieu de réserver un placement préférentiel pour les seuls contenus AMP dans les résultats de recherche, il suffirait de procurer des privilèges similaires à toute page qui satisferait à des critères de performance neutres et objectifs, comme, par exemple, le Speed Index. Les éditeurs pourront ainsi utiliser la solution technique de leur choix.</li>
-					<li>Ne pas intégrer de contenus tiers externes dans une page Google, à moins qu’il ne soit clair pour l’utilisateur ou l’utilisatrice d’avoir affaire à un produit Google. Il est parfaitement acceptable que Google lance un “lecteur de nouvelles”, mais il n’est ni acceptable de servir une page n’affichant que du contenu tiers depuis une URL de Google, ni d’obliger le tiers à utiliser l’hébergement de Google pour apparaître plus en évidence dans les résultats de recherche.</li>
+					<li>Ne pas intégrer de contenus tiers externes dans une page Google, à moins qu’il ne soit clair pour l’utilisateur ou l’utilisatrice d’avoir affaire à un produit Google. Il est parfaitement acceptable que Google lance un “lecteur de nouvelles”, mais il n’est ni acceptable de servir une page n’affichant que du contenu tiers depuis une URL de Google, ni d’obliger le tiers à utiliser l’hébergement de Google pour apparaître dans les résultats de recherche.</li>
 				</ol>
 
 				<p>Nous ne cherchons pas à stopper le développement de AMP par Google, et ces changements ne le requièrent pas. Aussi, nous approuvons la promotion par les moteurs de recherche des pages performantes. AMP peut demeurer l’une des technologies qui donnent aux éditeurs le choix entre une variété d’options de grande qualité afin de servir des pages Web rapidement et de rendre leur utilisation plus satisfaisante.</p>
@@ -217,20 +152,20 @@
 				<p>AMPのフォーマットそれ自体は問題ではなく、AMPの利用率が上がるにつれ、その実装のうち以下の2点がGoogleのコンテンツプラットフォームとしてのポジションをデファクト・スタンダード化することにつながっています。</p>
 
 				<ol>
-					<li>AMPの利用を”選択”し、Googleのドメインでホストされたコンテンツは検索結果において優先的なプロモーションが許され、ニュースコンテントにおいてはほかの検索結果よりも上位に表示される点</li>
-					<li>ユーザがGoogleが推奨するコンテントへナビゲートした際、ユーザは気がつかないうちにGoogleのエコシステム内に留まっている点</li>
+					<li>AMPの利用を”選択”し、Googleのドメインでホストされたコンテンツは検索結果において優先的なプロモーションが許され、ニュースコンテンツにおいてはほかの検索結果よりも上位に表示される点</li>
+					<li>ユーザがGoogleが推奨するコンテンツへページ遷移した際、ユーザは気がつかないうちにGoogleのエコシステム内に留まっている点</li>
 				</ol>
 
 				<p>AMPにおけるGoogleの目標が純粋にウェブのユーザ体験を向上させる事に向けられているなら、以下のシンプルな変更を行うことでウェブをダイナミックで、競争原理の働く、利用者を中心としたままにすることができるでしょう。</p>
 
 				<ol>
 					<li>AMPにのみ検索結果での優遇的ポジションを提供するのではなく、Speed Indexのような中立的なパフォーマンス評価を使って同等の目標を達していると判断できる全てのページに対して、同じ処遇を提供するべきだと考えています。そうすることでパブリッシャーは各自の技術的選択をが可能になります</li>
-					<li>ユーザが明確にGoogleのプロダクトを閲覧していると分かる形でなければ、Googleのページ内に第三者のコンテントを表示させない。Googleが「ニュースリーダー」を提供することにはなんら問題はありませんが、GoogleのURLであるにも関わらず、第三者のブランディングを表示することや、第三者がGoogleによるホスティングを行わない限り検索結果で上位に表示されない、といったことは受け入れがたい</li>
+					<li>ユーザが明確にGoogleのプロダクトを閲覧していると分かる形でなければ、Googleのページ内に第三者のコンテンツを表示させない。Googleが「ニュースリーダー」を提供することにはなんら問題はありませんが、GoogleのURLであるにも関わらず、第三者のブランディングを表示することや、第三者がGoogleによるホスティングを行わない限り検索結果で上位に表示されない、といったことは受け入れがたい</li>
 				</ol>
 
 				<p>Googleに対しAMPの開発を辞めて欲しいと提案しているわけではなく、これらの変更にはその必要もありません。検索結果において読み込みが速いページに対してよいランキングを与えることは素晴らしいことだと思います。AMPがユーザに対して早いウェブページを提供し、ユーザを幸せにするためにパブリッシャーが活用できる高品質な選択肢の1つとしての存在であり続けることは可能でしょう。</p>
 
-				<p>しかし、パブリッシャーがGoogleの検索における独占的な地位を背景にコンテントをGoogleの中に入れざるを得ない状況は避けるべきだと考えています。
+				<p>しかし、パブリッシャーがGoogleの検索における独占的な地位を背景にコンテンツをGoogleの中に入れざるを得ない状況は避けるべきだと考えています。
 				ウェブはGoogleではありませんし、Googleのみがウェブではないのですから。</p>
 
 				<p>敬具</p>
@@ -304,6 +239,96 @@
 				<p>Atenciosamente,</p>
 
 				<p class='note'>For signatories please refer to the <a href='?lang=en' data-langswitch='en'>English version</a>.  Translations are provided for information but should not be considered normative.</p>
+		
+      </article>
+    
+			<article class='container' lang='de'>
+
+				<p>Wir sind eine Gruppe von Einzelpersonen, die ein erhebliches Interesse an der Entwicklung und Gesundheit des World Wide
+					Web („das Web“) haben, und <strong>wir sind zutiefst besorgt</strong> über <a href='https://ampproject.org'>Accelerated Mobile Pages</a> („AMP“), ein Google-Projekt, das angeblich darauf abzielt, das Nutzererlebnis des Webs
+					zu verbessern.</p>
+
+				<p>Tatsächlich hält AMP die Nutzer innerhalb der Google-Domain und leitet den Verkehr von anderen Websites zum Nutzen von
+					Google ab. Mit Milliarden von Nutzern hat dies zur Folge, dass die Dominanz von Google im Web weiter verstärkt wird.</p>
+
+				<p>Wir erkennen das Problem langsamer Ladezeiten von Webseiten im Vergleich zu alternativen, proprietären Technologien wie <a href='https://instantarticles.fb.com/'>Facebook Instant Articles</a> und <a href='https://developer.apple.com/news-publisher/'>Apple News</a> an. Verlage (vor allem in den Nachrichtenmedien) sind seit langem mit schwierigen Entscheidungen und schlechten
+					Anreizen konfrontiert, die zu Fehlentscheidungen, Kompromissen und letztlich zu schrecklichen Nutzererlebnissen führen.</p>
+
+				<p>Suchmaschinen sind in der Lage, Einfluss auszuüben, um dieses Problem zu lösen. Google hat sich jedoch dafür entschieden,
+					eine Premium-Position an der Spitze ihrer Suchergebnisse (für Artikel) und ein „Blitz“-Symbol (für alle Arten von Inhalten)
+					zu schaffen, die nur für Publisher zugänglich sind, die eine von Google gesteuerte Technologie verwenden, die von Google
+					von ihrer Infrastruktur aus über eine Google-URL bedient wird und innerhalb eines von Google kontrollierten Nutzererlebnisses
+					platziert wird. (<a href='https://developers.google.com/search/docs/guides/about-amp'>Quelle</a>)</p>
+
+				<p>Das AMP-Format ist nicht an sich ein Problem, aber zwei Aspekte seiner Implementierung stärken die Position von Google
+					als de facto Standardplattform für Inhalte, da Google versucht, die Akzeptanz von AMP bei den Content-Erstellern zu erhöhen:</p>
+
+				<ol>
+					<li>Publizisten, die sich für AMP und das damit verbundene Hosting ihrer Inhalte innerhalb der Google-Domain entscheiden, erhalten eine bevorzugte Hervorhebung in der Suche, einschließlich (für Nachrichtenartikel) einer Position vor allen anderen Ergebnissen.</li>
+					<li>Wenn ein Nutzer von Google zu einem von Google empfohlenen Inhalt navigiert, verbleibt er unwissentlich im Ökosystem
+						von Google.</li>
+				</ol>
+
+				<p>Wenn Googles Ziel mit AMP in der Tat darin besteht, das Nutzererlebnis im Web zu verbessern, dann schlagen wir einige
+					einfache Änderungen vor, die dies tun würden, während das Web dennoch dynamisch, wettbewerbsfähig und verbraucherorientiert
+					bleibt:
+				</p>
+
+				<ol>
+					<li>Anstatt Premium-Platzierung in den Suchergebnissen nur für AMP zu gewähren, bieten Sie allen Seiten, die ein objektives,
+						neutrales Leistungskriterium wie <a href='https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics/speed-index'>Speed Index</a> erfüllen, die gleichen Vorteile. Die Verlage können dann jede technische Lösung ihrer Wahl nutzen.</li>
+					<li>Zeigen Sie keine Inhalte von Drittanbietern auf einer Google-Seite an, es sei denn, dem Nutzer ist klar, dass er sich
+						ein Google-Produkt ansieht. Es ist durchaus akzeptabel, dass Google einen „Newsreader“ auf den Markt bringt, aber es
+						ist nicht akzeptabel, eine Seite anzuzeigen, die nur das Branding von Drittanbietern auf der eigentlichen Google-URL
+						trägt, und auch nicht zu verlangen, dass Dritte das Hosting von Google nutzen, um in den Suchergebnissen zu erscheinen.</li>
+				</ol>
+
+				<p>Wir wollen die Entwicklung von AMP durch Google nicht stoppen, und diese Änderungen erfordern das nicht. Wir begrüßen
+					auch Suchmaschinen, die Ranking-Präferenzen für schnell ladende Seiten vergeben. AMP kann eine von einer Reihe von Technologien
+					bleiben, die Publishern qualitativ hochwertige Optionen für die schnelle Bereitstellung von Webseiten und die Zufriedenheit
+					der Nutzer bieten.</p>
+
+				<p>Verlage sollten jedoch nicht durch die Suchdominanz von Google gezwungen werden, ihre Inhalte unter ein Google-Dach zu
+					stellen. Das Web ist nicht Google, und sollte nicht nur Google sein.</p>
+
+				<p>Mit freundlichen Grüßen,</p>
+
+				<p class='note'>
+					Für die Unterzeichner verweisen wir auf die <a href='?lang=en' data-langswitch='en'>englische Version</a>. Übersetzungen dienen der Information, sind aber nicht als normativ anzusehen.</p>
+
+			</article>
+
+			<article class='container' lang='vi'>
+
+				<p>Chúng tôi là một cộng đồng của những cá nhân có niềm quan tâm đáng kể đến sự phát triển của World Wide Web (“Web”), và <strong>chúng tôi rất lo ngại</strong> về <a href='https://ampproject.org'>Accelerated Mobile Pages</a> (“AMP”), một dự án của Google với mục đích cải thiện trải nghiệm của người dùng trên Web.</p>
+
+				<p>Thực tế là, AMP gói gọn người dùng trong phạm vi của Google và chuyển hướng lưu lượng truy cập ra khỏi những trang web khác vì lợi ích của Google. Với quy mô hàng tỷ người dùng, điều này ảnh hưởng đến việc <strong>tăng cường sự thống trị của Google với thế giới Web</strong> trong tương lai.</p>
+
+				<p>Chúng tôi nhận thức được rằng vấn đề của những trang Web trở nên chậm chạp, liên quan đến những công nghệ thay thế, độc quyền như <a href='https://instantarticles.fb.com/'>Facebook Instant Articles</a> và <a href='https://developer.apple.com/news-publisher/'>Apple News</a>. Những nhà xuất bản (nhất là trong mảng truyền thông) đã phải đối mặt với nhiều lựa chọn khó khăn, dẫn đến những quyết định và thoả hiệp xấu, và cuối cùng đem đến cho người dùng những trải nghiệm tồi tệ.</p>
+
+				<p>Những công cụ tìm kiếm đang ở một vị thế rất mạnh để tận dụng sự ảnh hưởng để giải quyết vấn đề này. Tuy nhiên, Google đã chọn cách tạo ra vị trí ưu tiên ở đầu kết quả tìm kiếm của họ (cho những bài viết) và một biểu tượng “tia chớp” (cho tất cả các loại nội dung), chỉ dành riêng cho những nhà xuất bản có sử dụng công nghệ được kiểm soát bởi Google, cung cấp bởi Google từ cơ sở hạ tầng của họ, trên một URL của Google, và được đặt bên trong một trải nghiệm người dùng được kiểm soát bởi Google. (<a href='https://developers.google.com/search/docs/guides/about-amp'>nguồn</a>)</p>
+
+				<p>Bản thân định dạng AMP không phải là vấn đề, mà là hai khía cạnh của việc triển khai nó khiến tăng cường vị thế của Google như là một nền tảng chuẩn cho nội dung, như Google đang cố gắng thu hút những nhà sáng tạo nội dung với AMP:</p>
+
+				<ol>
+				  <li>Nội dung được “tích hợp” với AMP và được lưu trữ liên kết trong phạm vi Google được hưởng ưu đãi quảng cáo tìm kiếm, bao gồm (cho những bài viết tin tức) một vị trí bên trên tất cả những kết quả tìm kiếm khác.</li>
+				  <li>Khi một người dùng điều hướng từ Google đến một nội dung mà Google đã đề nghị, họ vẫn nằm trong hệ sinh thái của Google mà không hay biết.</li>
+				</ol>
+
+				<p>Nếu mục tiêu của Google với AMP là thực sự cải thiện trải nghiệm của người dùng trên Web, thì chúng tôi có một vài đề xuất thay đổi đơn giản có thể thực hiện được điều đó mà vẫn giữ cho Web linh động, cạnh tranh và hướng đến người dùng:</p>
+
+				<ol>
+				  <li>Thay vì ưu đãi vị trí ưu tiên trong kết quả tìm kiếm dành riêng cho AMP, cung cấp lợi ích tương tự cho tất cả những trang đạt được những tiêu chí khách quan về hiệu năng như <a href='https://sites.google.com/a/webpagetest.org/docs/using-webpagetest/metrics/speed-index'>Speed Index</a>. Những nhà xuất bản sau đó có thể sử dụng bất kỳ giải pháp kỹ thuật nào mà họ muốn.</li>
+				  <li>Không hiển thị nội dung bên thứ ba trong một trang Google trừ khi rõ ràng rằng người dùng đang xem một sản phẩm của Google. Hoàn toàn có thể chấp nhận nếu Google khởi chạy một “trình đọc tin tức”, nhưng không thể chấp nhận hiển thị một trang chỉ mang thương hiệu của bên thứ ba trên một URL thực chất là của Google, cũng như yêu cầu bên thứ ba sử dụng dịch vụ lưu trữ của Google để xuất hiện trong kết quả tìm kiếm.</li>
+				</ol>
+
+				<p>Chúng tôi không muốn ngăn cản Google phát triển AMP, và những thay đổi này không đòi hỏi điều đó. Chúng tôi cũng hoan nghênh những công cụ tìm kiếm ưu tiên thứ hạng cho những trang tải nhanh. AMP vẫn có thể là một trong những công nghệ đem đến cho nhà xuất bản những tuỳ chọn chất lượng cao để truyền tải trang Web nhanh hơn và làm cho người dùng hài lòng hơn.</p>
+
+				<p>Tuy nhiên, những nhà xuất bản không nên bị ràng buộc bởi sự thống trị của Google trong mảng tìm kiếm để đưa nội dung của mình vào bên dưới cái bóng của Google. <strong>Web không phải là Google, và không nên chỉ có Google.</strong></p>
+
+				<p>Trân trọng,</p>
+
+				<p class='note'>Để ký tên vào bức thư này hãy xem <a href='?lang=en' data-langswitch='en'>bản tiếng Anh</a>. Những bản dịch được cung cấp để có thêm thông tin nhưng không nên được coi là quy chuẩn.</p>
 
 			</article>
 
@@ -315,6 +340,8 @@
 					<li><a href='?lang=es' data-langswitch='es'>Español</a></li>
 					<li><a href='?lang=ja' data-langswitch='ja'>日本語</a></li>
 					<li><a href='?lang=pt' data-langswitch='pt-br'>Português</a></li>
+					<li><a href='?lang=de' data-langswitch='de'>Deutsch</a></li>
+					<li><a href='?lang=vi' data-langswitch='vi'>Tiếng Việt</a></li>
 				</ul>
 			</div>
 
