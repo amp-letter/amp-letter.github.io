@@ -65,10 +65,13 @@ html *[lang] { display: none; }
 html[lang=en] *[lang=en],
 html[lang=es] *[lang=es],
 html[lang=uk] *[lang=uk],
+html[lang=ru] *[lang=ru],
 html[lang=fr] *[lang=fr],
 html[lang=ja] *[lang=ja],
+html[lang=pt-br] *[lang=pt-br],
 html[lang=de] *[lang=de],
-html[lang=vi] *[lang=vi] {
+html[lang=vi] *[lang=vi],
+html[lang=pl] *[lang=pl] {
 	display: block
 }
 
@@ -120,9 +123,12 @@ html[lang=en] .lang-switcher li [data-langswitch='en'],
 html[lang=es] .lang-switcher li [data-langswitch='es'],
 html[lang=uk] .lang-switcher li [data-langswitch='uk'],
 html[lang=fr] .lang-switcher li [data-langswitch='fr'],
+html[lang=ru] .lang-switcher li [data-langswitch='ru'],
 html[lang=ja] .lang-switcher li [data-langswitch='ja'],
+html[lang=pt-br] .lang-switcher li [data-langswitch='pt-br'],
 html[lang=de] .lang-switcher li [data-langswitch='de'],
-html[lang=vi] .lang-switcher li [data-langswitch='vi'] {
+html[lang=vi] .lang-switcher li [data-langswitch='vi'],
+html[lang=pl] .lang-switcher li [data-langswitch='pl'] {
 	color: inherit;
 	text-decoration: inherit;
 	pointer-events: none;

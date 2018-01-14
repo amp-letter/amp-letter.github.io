@@ -2,11 +2,21 @@
 
 ## Signing the letter as an individual
 
-The letter uses Jekyll to combine and sort signatures.  Please create a file called your-name.yml in /_data/supporting, with the following keys:
+The letter uses Jekyll to combine and sort signatures.  Please [create a file](https://github.com/amp-letter/amp-letter.github.io/new/master/_data/supporting) called your-name.yml in `/_data/supporting`, using the following template:
 
-* `sortName`: Your family name (just for sorting, not displayed)
-* `displayName`: How your full name should be displayed
-* `url`: URL of your website, profile or AMP-related statement
+```
+sortName: {Your family name (just for sorting, not displayed)}
+displayName: {How your full name should be displayed}
+url: {URL of your website, profile or AMP-related statement}
+```
+
+For example:
+
+```
+sortName: Stevenson
+displayName: Alice Stevenson
+url: https://example.com/amp-letter
+```
 
 You'll be inserted into the list in order of `sortName`.
 
