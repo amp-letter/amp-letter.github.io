@@ -1,7 +1,0 @@
-If you are signing, please put your FULL NAME in the TITLE OF THE PULL REQUEST.
-
-You should have a file called your-name.yml in /_data/supporting, with the following keys:
-
-* `sortName`: Strickland
-* `displayName`: Jen Strickland
-* `url`: https://jenstrickland.design
