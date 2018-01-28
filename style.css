@@ -71,7 +71,8 @@ html[lang=ja] *[lang=ja],
 html[lang=pt-br] *[lang=pt-br],
 html[lang=de] *[lang=de],
 html[lang=vi] *[lang=vi],
-html[lang=pl] *[lang=pl] {
+html[lang=pl] *[lang=pl],
+html[lang=zh-hant] *[lang=zh-hant] {
 	display: block
 }
 
