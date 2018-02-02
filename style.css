@@ -129,7 +129,8 @@ html[lang=ja] .lang-switcher li [data-langswitch='ja'],
 html[lang=pt-br] .lang-switcher li [data-langswitch='pt-br'],
 html[lang=de] .lang-switcher li [data-langswitch='de'],
 html[lang=vi] .lang-switcher li [data-langswitch='vi'],
-html[lang=pl] .lang-switcher li [data-langswitch='pl'] {
+html[lang=pl] .lang-switcher li [data-langswitch='pl'],
+html[lang=zh-hant] .lang-switcher li [data-langswitch='zh-hant']{
 	color: inherit;
 	text-decoration: inherit;
 	pointer-events: none;
